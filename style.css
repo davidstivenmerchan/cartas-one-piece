@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bahiana', cursive;
+    user-select: none;
+
+}
+.cartas{
+    display: flex;
+}
+.carta{
+    margin: 10px;
+    background: transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 280px;
+    transition: .5s;
+    perspective: 1000px;
+
+    
+}
+.contenedor{
+    position: relative;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    border: 1px solid black;
+
+}
+.voltear{
+    transform: rotateY(180deg);
+}
+
+.carta:hover p{
+    font-size: 23px;
+    background: rgba(233, 231, 231,.5);
+
+}
+.carta:hover{
+    
+    cursor: pointer;
+    
+}
+.carta:hover .contenedor{
+    -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+}
+.carta:hover .detras ul{
+    background: rgba(255, 255, 255,.5);
+}
+.carta h2{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+.rol{
+    text-align: center;
+    color: black;
+    transition: .5s;
+}
+
+.pie{
+    margin-top: 120px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.pie p{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    transition: .5s;
+}
+.pie strong{
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 30px;
+    color: white;
+}
+
+/* ---------------------------------------FONDOS--------------------------------------------------- */
+
+/* fondos de zoro */
+
+div .cartas:nth-child(1) .carta:nth-child(1) .contenedor .frente{
+    background: url(img/zoro.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(1) .carta:nth-child(1) .contenedor .detras{
+    background: url(img/zoro2.jpg);
+    background-size: cover;   
+}
+
+
+/* fondos de usopp */
+
+div .cartas:nth-child(1) .carta:nth-child(2) .contenedor .frente{
+    background: url(img/usopp.jpg);
+    background-size: cover;  
+
+}
+div .cartas:nth-child(1) .carta:nth-child(2) .contenedor .detras{
+    background: url(img/usopp2.gif);
+    background-size: cover;   
+}
+
+
+/* fondos de Nico Robin */
+
+
+div .cartas:nth-child(1) .carta:nth-child(3) .contenedor .frente{
+    background: url(img/robin.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(1) .carta:nth-child(3) .contenedor .detras{
+    background: url(img/robin.gif);
+    background-size: cover;   
+}
+
+/* fondos de chooper */
+
+
+div .cartas:nth-child(1) .carta:nth-child(4) .contenedor .frente{
+    background: url(img/tony.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(1) .carta:nth-child(4) .contenedor .detras{
+    background: url(img/tony.gif);
+    background-size: cover;   
+}
+
+
+/* fondos de brook */
+
+
+div .cartas:nth-child(1) .carta:nth-child(5) .contenedor .frente{
+    background: url(img/brook.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(1) .carta:nth-child(5) .contenedor .detras{
+    background: url(img/brook2.gif);
+    background-size: cover;   
+}
+
+
+/* fondos de nami */
+
+
+div .cartas:nth-child(2) .carta:nth-child(1) .contenedor .frente{
+    background: url(img/nami.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(2) .carta:nth-child(1) .contenedor .detras{
+    background: url(img/nami.gif);
+    background-size: cover;   
+}
+
+/* fondos de sanji */
+
+
+div .cartas:nth-child(2) .carta:nth-child(2) .contenedor .frente{
+    background: url(img/sanji.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(2) .carta:nth-child(2) .contenedor .detras{
+    background: url(img/sanji.gif);
+    background-size: cover;   
+}
+
+/* fondos de luffy */
+
+
+div .cartas:nth-child(2) .carta:nth-child(3) .contenedor .frente{
+    background: url(img/luffy.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(2) .carta:nth-child(3) .contenedor .detras{
+    background: url(img/luffy.gif);
+    background-size: cover;   
+}
+
+/* fondos de jimbe */
+
+
+div .cartas:nth-child(2) .carta:nth-child(4) .contenedor .frente{
+    background: url(img/jimbe.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(2) .carta:nth-child(4) .contenedor .detras{
+    background: url(img/jimbe.gif);
+    background-size: cover;   
+}
+
+/* fondos de franky */
+
+
+div .cartas:nth-child(2) .carta:nth-child(5) .contenedor .frente{
+    background: url(img/franky.jpg);
+    background-size: cover;   
+}
+div .cartas:nth-child(2) .carta:nth-child(5) .contenedor .detras{
+    background: url(img/franky.gif);
+    background-size: cover;   
+}
+
+
+
+
+
+.frente, .detras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.detras{
+    transform: rotateY(180deg);
+}
+.detras ul,
+.detras p{
+    transition: .5s;
+}
